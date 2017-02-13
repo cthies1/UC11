@@ -39,9 +39,9 @@ function listTriangularNumbers(n) {
 function multTable(row, col) {
     var table = "<table>";
     var x;
-    for (var i = 1; i < row; ++i) {
+    for (var i = 1; i <= row; ++i) {
         table = table + "<tr>";
-        for (var j = 1; j < col; ++j) {
+        for (var j = 1; j <= col; ++j) {
             x = i * j;
             table = table + "<td>" + x + "</td>";
         }
