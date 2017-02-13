@@ -55,9 +55,9 @@ function multTable(row, col) {
  * @param {number} n
  * @returns {number}
  */
-function factorial(n) {
-    var result = 0;
-    for (var i = n; i > 1; i--) {
+function factorial(num) {
+    var result = 1;
+    for (var i = 2; i <= num; i++) {
         result = result * i;
     }
     return result;
