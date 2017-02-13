@@ -22,7 +22,7 @@ function listTriangularNumbers(n) {
     var num;
     var array = [];
     for (i = 1; i <= n; ++i) {
-        num = i;
+        num = 0;
         for (j = i; j >= 1; --j) {
             num = num + j;
         }
@@ -55,9 +55,9 @@ function multTable(row, col) {
  * @param {number} n
  * @returns {number}
  */
-function factorial(n) {
-    var result = 0;
-    for (var i = n; i > 1; i--) {
+function factorial(num) {
+    var result = 1;
+    for (var i = 2; i <= num; i++) {
         result = result * i;
     }
     return result;
@@ -85,9 +85,9 @@ function sort(a) {
         var k;
         for (k = i - 1;
             (k >= 0) && (j < result[k]); k--) {
-            result[k - 1] = result[k];
+            result[k + 1] = result[k];
         }
-        result[k - 1] = j;
+        result[k + 1] = j;
     }
     return result;
 }
